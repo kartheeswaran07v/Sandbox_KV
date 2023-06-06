@@ -79,8 +79,8 @@ class Upload(db.Model):
     data = Column(LargeBinary)
 
 
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#     db.create_all()
 
 
 @app.route('/', methods=["GET", "POST"])
