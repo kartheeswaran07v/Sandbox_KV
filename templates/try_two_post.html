@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try two post</title>
+</head>
+<body>
+
+<form action="{{try2post}}" method="post">
+
+    <select name="check_order0" id="">
+        {% for i in list__[0] %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endfor %}
+    </select>
+    <br><br>
+    <select name="check_order1" id="">
+        {% for i in list__[1] %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endfor %}
+    </select>
+    <br><br>
+    <select name="check_order2" id="">
+        {% for i in list__[2] %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endfor %}
+    </select>
+    <br><br>
+    <select name="check_order3" id="">
+        {% for i in list__[3] %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endfor %}
+    </select>
+    <br><br>
+
+   <input type="submit" style="background-color:#FFFF66;color:black;width:150px; height:40px;" name="ServerDetails" value="ServerDetails"/>
+
+    <br><br>
+    <input type="submit" style="background-color:#FFFF66;color:black;width:150px; height:40px;" name="GenerateFile" value="GenerateFile"/>
+
+    <br><br>
+    <input type="submit" style="background-color:#FFFF66;color:black;width:150px; height:40px;" name="Nothing Else" value="Nothing Else"/>
+
+</form>
+
+
+
+</body>
+</html>

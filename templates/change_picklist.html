@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <input type="text" id="color" name="color">
+  <select name="" id="changeData">
+      <option>Choose Database Type</option>-->
+    {% for i in len_c %}
+        <option data-value="{{i}}">{{data[i].flowrate}}</option>
+    {% endfor %}
+<!--    <option>Choose Database Type</option>-->
+<!--    <option data-value="green">green</option>-->
+<!--    <option data-value="red">red</option>-->
+<!--    <option data-value="orange">orange</option>-->
+<!--    <option data-value="black">black</option>-->
+  </select>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+</body>
+<script>
+  $(document).ready(function () {
+  $('#changeData').change(function(){
+  var color = $(this).val();
+  var color_int = Number(color)
+  var color_str = "{{data[color_int].vPressure}}"
+  $('#color').val(color_str);
+  })
+  });
+</script>
+</html>

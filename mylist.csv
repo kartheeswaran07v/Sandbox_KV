@@ -1,0 +1,4 @@
+,Flow Rate,Inlet Pressure,Outlet Pressure,Inlet Temperature,Specific Gravity,Calculated Cv,Open %,Valve SPL,Inlet Velocity,Outlet Velocity,Valve Velocity,Inlet Pipe Size,Outlet Pipe Size
+0,6000000,214.7,64.7,520,1.0,1515.085,83,74.177,23.373,23.373,23.373,8,8
+1,125000,514.7,264.7,500,0.97,175.293,83,74.177,0.892,0.892,2.008,6,6
+2,6000000,214.7,64.7,520,1.0,1515.085,83,74.177,23.373,23.373,23.373,8,8
