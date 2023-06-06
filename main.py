@@ -147,6 +147,11 @@ temp_unit_list = [{'id': 'C', 'name': '°C'}, {'id': 'F', 'name': '°F'}, {'id':
 units_pref = [length_unit_list, flowrate_unit_list, pressure_unit_list, temp_unit_list]
 
 
+@app.route('/', methods=["GET", "POST"])
+def home():
+    return "<h1>Welcome to Sandbox KV</h1>"
+
+
 @app.route('/try-post', methods=["GET", "POST"])
 def try2post():
     global units_pref
