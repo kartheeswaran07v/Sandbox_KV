@@ -8,6 +8,7 @@ from sqlalchemy.orm.exc import DetachedInstanceError
 import math
 import csv
 import pandas
+import os
 
 # app configuration
 app = Flask(__name__)
@@ -15,8 +16,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = "kkkkk"
 
 # CONNECT TO DB
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///dfx_db_seis.db")
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///item_cases_csv.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABase_URL1", "sqlite:///item_cases_csv.db")
+# app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///item_cases_csv.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
